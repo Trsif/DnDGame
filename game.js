@@ -1,4 +1,5 @@
 const readlineSync = require('readline-sync');
+const Font = require('ascii-art-font');
 
 // TODO Create mob base//
 
@@ -24,7 +25,17 @@ const bat = base('Bat', 5, 1, 5);
 const rat = base('rat', 3, 3, 7);
 const goblin = base('Goblin', 5, 5, 15);
 const demon = base('Demon', 25, 2, 5);
+//TO DO ADD TITLE
 
+const title = String.raw `
+______   _        ______     _______ 
+(  __  \ ( (    /|(  __  \   (  ____ \
+| (  \  )|  \  ( || (  \  )  | (    \/
+| |   ) ||   \ | || |   ) |  | |      
+| |   | || (\ \) || |   | |  | |      
+| |   ) || | \   || |   ) |  | |      
+| (__/  )| )  \  || (__/  )  | (____/\
+(______/ |/    )_)(______/   (_______/`
 //TODO Race Selector//
 races = [human, elf, dwarf, giant];
 raceOptions = races.map(race => race.race)
