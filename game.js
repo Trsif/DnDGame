@@ -1,5 +1,4 @@
 const readlineSync = require('readline-sync');
-const Font = require('ascii-art-font');
 
 // TODO Create mob base//
 
@@ -36,6 +35,7 @@ ______   _        ______     _______
 | |   ) || | \   || |   ) |  | |      
 | (__/  )| )  \  || (__/  )  | (____/\
 (______/ |/    )_)(______/   (_______/`
+console.log(title);
 //TODO Race Selector//
 races = [human, elf, dwarf, giant];
 raceOptions = races.map(race => race.race)
