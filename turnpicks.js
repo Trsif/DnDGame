@@ -1,5 +1,5 @@
 const readlineSync = require("readline-sync");
-function pickoption(){
+function turnOption(){
 playerskills = ['Attack','Defend','rest']
 skillOption = readlineSync.keyInSelect(playerskills, `Your turn hero!`,{
     cancel: false
@@ -7,4 +7,4 @@ skillOption = readlineSync.keyInSelect(playerskills, `Your turn hero!`,{
 }
 selectedSkill = playerskills[skillOption]
 
-module.exports = pickoption
+module.exports = turnOption
